@@ -5,9 +5,8 @@ This is a blog analytics and search tool developed using Express.js and Lodash. 
 ## Features
 
 - Retrieve blog data from a third-party API.
-- Calculate various statistics on the retrieved data.
+- Calculate statistics on the retrieved data.
 - Implement a search functionality to filter blogs by query.
-- Error handling for API requests and data processing.
 - Caching mechanism to improve performance (bonus challenge).
 
 ## Prerequisites
