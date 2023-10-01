@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Import memoized functions for blog search and analytics
 const { memoizedBlogSearch, memoizedGetAnalytics } = require('./memoize/memoize'); // Update the path as needed
@@ -40,6 +40,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal Server Error' });
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on port ${port}`);
 });
